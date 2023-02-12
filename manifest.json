@@ -1,0 +1,10 @@
+{
+  "name": "CklineHMO",
+  "short_name": "CKHMO",
+  "theme_color": "#2196f3",
+  "background_color": "#f2f6f9",
+  "display": "browser",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/index.html"
+}

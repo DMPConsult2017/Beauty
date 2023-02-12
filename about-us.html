@@ -1,0 +1,740 @@
+<!-- layout.njk -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV8ZY93MS9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EV8ZY93MS9');
+</script>
+
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="../use.fontawesome.com/d4664db4a7.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/cklinefavicon.jpg">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/cklinefavicon.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/cklinefavicon.jpg">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/cklinefavicon.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/cklinefavicon.jpg">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/acklinefavicon.jpg">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/cklinefavicon.jpg">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/cklinefavicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/cklinefavicon.jpg">
+    <link rel="icon" type="image/jpg" sizes="192x192" href="img/cklinefavicon.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="img/cklinefavicon.jpg">
+    <link rel="icon" type="image/jpg" sizes="96x96" href="img/cklinefavicon.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="img/cklinefavicon.jpg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Facebook and Twitter integration -->
+	<meta property="og:site_name" content="CklineHMO"/>	
+	<meta name="twitter:title" content="CklineHMO" />
+	<meta name="twitter:image" content="https://s3.us-west-2.amazonaws.com/cdn.Cklinehmo.com/images/OG%20Image.png" />
+	<meta name="twitter:url" content="https://Cklinehmo.com" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@Cklinehmo" />
+	<meta name="twitter:creator" content="@Cklinehmo" />
+	<meta name="twitter:description" content="Buy affordable Health Insurance in Nigeria for Individuals, Families and Companies in Nigeria. The Best HMO in Nigeria." />
+    <!-- Frame bust -->
+    <!--<style id="acj">
+        body{display:none !important;}
+    </style>
+    <script type="text/javascript">
+      if (self === top) {
+        var acj = document.getElementById("acj");
+        acj.parentNode.removeChild(acj);
+      } else {
+        top.location = self.location;
+      }
+    </script>-->
+    <!--End of Frame bust-->
+
+    <!-- Google Tag Manager -->
+
+    <!--<script>
+      (
+        setTimeout(
+          (function(w,d,s,l,i){
+            w[l]=w[l]||[];w[l].push({
+            'gtm.start':
+            new Date().getTime(),event:'gtm.js'
+            });var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer',(window.location.hostname === "www.Cklinehmo.com"||"Cklinehmo.com") ? 'GTM-NKZF9P7' : 'GTM-TXWTLNQ'),3000
+        )
+      );
+    </script>-->
+    <!-- End Google Tag Manager -->
+
+   <!-- <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "InsuranceAgency",
+            "name": "Ckline HMO",
+            "description": "Ckline HMO is a Health Insurance company in Nigeria that provides Health Insurance cover for Individuals, Family and business",
+            "url": "https://www.Cklinehmo.com/",
+            "logo": "https://www.Cklinehmo.com/img/logo.svg",
+            "image": "https://www.Cklinehmo.com/img/index_desktop_ver.svg",
+            "streetAddress": "32 Lanre Awolokun Street, Gbagada, Lagos, Nigeria.",
+            "postOfficeBoxNumber": "100234",
+            "addressRegion": " Lagos",
+            "addressCountry": "Nigeria",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "0700-73542623",
+                "contactType": "Customer service",
+                "availableLanguage": ["English"],
+                "description": "Mobile Phone Number"
+            }],
+            "sameAs": [
+                "https://facebook.com/Cklinehmo",
+                "https://twitter.com/Cklinehmo",
+                "http://www.instagram.com/Cklinehmo"
+            ]
+        }
+    </script>-->
+
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 88%;
+  margin-left: 5%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  text-align: center;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: rgb(6, 124, 6);
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: rgba(15, 39, 70, 0.829);
+    }
+    </style>
+    
+    <script async src="https://whatsform.com/launcher.js" id="wf-widget" data-id="llhuoZ" data-message="Chat on WhatsApp" ></script>
+
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+  <!--<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKZF9P7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>-->
+<!-- End Google Tag Manager (noscript) -->
+
+  
+
+<!---Navbar-->
+
+<div class="container">
+    <!-- Navigation-->
+    <!-- navbar.njk -->
+<div class="lg-12 md-12 sm-12 xs-12">
+    <div class="navbar-container">
+        <nav class="navbar l-container">
+            <div>
+                <a href="index.html">
+                    <img class="navbar-logo" src="img/flogos.png" height="50px" alt="Ckline HMO's Logo">
+                </a>
+            </div>
+
+            <div class="main-navbar">
+                <ul class="navbar__menu">
+                    <li class="navbar__list-item">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="navbar__list-item navbar__dropdown">
+                        <a href="about-us.html">About Us</a>
+                    </li>
+
+                    <li class="navbar__list-item navbar__dropdown">
+                        <a href="#" id="health-plans" test-id="ourHealthPlans">Our Health Plans <i class="fa fa-chevron-down"></i></a>
+                        <ul class="navbar__dropdown-item">
+                            <li><a href="buynow.html" id="for-buynow" test-id="forbuynownavbar">Ckline Basic</a></li>
+                            <li><a href="buynow.html" id="buynoww" test-id="forbuynownavbar">Ckline Basic Plus</a></li>
+                            <li><a href="buynow.html" id="for-buynow" test-id="forBuynow-navbar">Ckline Economy</a></li>
+                            <li><a href="buynow.html" id="for-buynow" test-id="forBuynow-navbar">Ckline Upper Class</a></li>
+                            <li><a href="buynow.html" id="for-buynow" test-id="forBuynow-navbar">Ckline First Class</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navbar__list-item navbar__dropdown">
+                        <a href="#" test-id="resourcesNavbar">Resources <i class="fa fa-chevron-down"></i></a>
+                        <ul class="navbar__dropdown-item">
+                            <li><a href="chospital-list.html">Your available hospitals</a></li>
+                            <li><a href="benefits.html" test-id="benefitsList">Your benefit list</a></li>
+                            <li><a href="changeofhospital.html" test-id="changeofhospital">Change of hospital</a></li>
+                            <li><a href="https://forms.gle/YeSjVYsmDLv5FrE76">Newsletter</a></li>
+                            <!--Download App-->
+                            <!--<li><a href="url">Download
+                                    your care app</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li class="navbar__list-item navbar__dropdown">
+                        <a href="#" test-id="support">Contact Us <i class="fa fa-chevron-down"></i></a>
+                        <ul class="navbar__dropdown-item">
+                            <li><a href="faq.html" test-id="faqLink">FAQ</a></li>
+                            <li><a href="tel:01-2951030">Call us: 01-2951030 09014685058, 08023702721, 08063216136</a></li>
+                            <li><a href="https://wa.me/2347056855711">WhatsApp: 07056855711</a></li>
+                            <li><a href="mailto:info@Cklinehmo.com?subject=Enquiry [from our site]">Email: info@Cklinehmo.com cklinehealthcareltd@gmail.com</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <!--Login-->
+                    <!--<li class="navbar__list-item">
+                        <a href="loginpage.html" id="login">Login</a>
+                    </li>-->
+
+                    <li class="navbar__list-item">
+                        <button class="button button_primary button_small header__button"
+                            onclick="window.location.href='buynow.html';">Get
+                            started</button>
+                    </li>
+                </ul>
+            </div>
+
+<!---Mobile Nav-->            
+           <div class="mobile-navbar">
+                <div id="mobile-nav-trigger" class="mobile-navbar-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="mobile-navbar-menu" id="mobile-nav-menu">
+
+                    <li class="navbar__list-item navbar__dropdown">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="navbar__list-item navbar__dropdown">
+                        <a href="about-us.html">About Us</a>
+                    </li>
+                    
+                    <li class="navbar__list-item navbar__dropdown">
+                        <a href="#" id="health-plans" test-id="ourHealthPlans">Our Health Plans <i class="fa fa-chevron-down"></i></a>
+                        <ul class="navbar__dropdown-item">
+                            <li><a href="buynow.html" id="for-buynow" test-id="forbuynownavbar">Ckline Basic</a></li>
+                            <li><a href="buynow.html" id="buynoww" test-id="forbuynownavbar">Ckline Basic Plus</a></li>
+                            <li><a href="buynow.html" id="for-buynow" test-id="forBuynow-navbar">Ckline Economy</a></li>
+                            <li><a href="buynow.html" id="for-buynow" test-id="forBuynow-navbar">Ckline Upper Class</a></li>
+                            <li><a href="buynow.html" id="for-buynow" test-id="forBuynow-navbar">Ckline First Class</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navbar__list-item navbar__dropdown">
+                        <a href="#" test-id="resourcesNavbar">Resources <i class="fa fa-chevron-down"></i></a>
+                        <ul class="navbar__dropdown-item">
+                            <li><a href="chospital-list.html">Your available hospitals</a></li>
+                            <li><a href="benefits.html" test-id="benefitsList">Your benefit list</a></li>
+                            <li><a href="changeofhospital.html" test-id="changeofhospital">Change of hospital</a></li>
+                            <li><a href="https://forms.gle/YeSjVYsmDLv5FrE76">Newsletter</a></li>
+                            <!--Download App-->
+                            <!--<li><a href="url">Download
+                                    your care app</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li class="navbar__list-item navbar__dropdown">
+                       <a href="#" test-id="support">Contact Us <i class="fa fa-chevron-down"></i></a>
+                        <ul class="navbar__dropdown-item">
+                            <li><a href="faq.html" test-id="faqLink">FAQ</a></li>
+                            <li><a href="tel:01-2951030">Call us: 01-2951030 09014685058, 08023702721, 08063216136</a></li>
+                            <li><a href="https://wa.me/2347056855711">WhatsApp: 07056855711</a></li>
+                            <li><a href="mailto:info@Cklinehmo.com?subject=Enquiry [from our site]">Email: info@Cklinehmo.com 
+                                cklinehealthcareltd@gmail.com</a></li>
+                        </ul>
+                    </li>
+
+                    <!--Login-->
+                    <!--<li class="navbar__list-item">
+                        <a href="loginpage.html" id="login">Login</a>
+                    </li>-->
+                    
+                    <li class="navbar__list-item">
+                        <button class="button button_primary button_small header__button"
+                            onclick="window.location.href='buynow.html';">Get
+                            started</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+        
+
+        <!-- header-->
+        <div class="l-container" id="aboutus">
+            <div class="col lg-12 md-12 sm-12 xs-12">
+                <div class="header header_center-align">
+                    <div class="header__text-box_center">
+                        <h1 class="header__text">What You Need To Know About CklineHMO</h1>
+                        <p class="header__text-small_center">
+                            CKLINE Healthcare Limited is a limited liability company that is duly registered to 
+                            underwrite health insurance in Nigeria. The company is being managed by seasoned professionals with proven track 
+                            records in the Managed Healthcare Service and Health Insurance Industry, in that we have provider contracts with 
+                            over 400 other clinics/hospitals nationwide, which geographically spread over 126 Nigerian cities. 
+                            Our list of hospitals is unlimited to this, we are open to update any good NHIS hospitals of choice not listed in our providers network,  
+<br>We also run staff Pre-Employment test and manage outsourced worksite clinics health centers 
+nationwide, Quality delivery of managed care services in a professional fee-for-service system.</br>
+                        </p>
+                    </div>
+                    <!--insert image here-->
+                    <img class="header__image" width="30%" src="img/about.jpg">
+                </div>
+            </div>
+        </div>
+
+
+<!-- information section -->
+        
+
+        <button class="accordion"> <h2>Mission Statement</h2></button>
+<div class="panel">
+  <p>“To maintain a cordial relationship with our providers which, 
+    <br>will in turn, satisfy our stream of 
+    clients by meeting up with our responsibility”.</p>
+</div>
+
+<button class="accordion"><h2> Vision Statement </h2></button>
+<div class="panel">
+  <p>“To provide and maintain sustainable quality healthcare services 
+    <br>with regular review of our  
+    ultimate goal of achieving ever improving healthcare services”.</p>
+</div>
+
+<button class="accordion" id=ouruniquesellingpoint><h2> Our Unique Selling Point </h2></button>
+<div class="panel">
+  <p>CKLINE healthcare limited is fully loaded with affordable health plans and quality benefits for people from all works of life.
+    <br> <br>
+    -Quality delivery of managed care services in a professional fee-for-service.<br>
+    <br>-Flexible payment plan. <br>
+    <br>-Fastest in payment of claims to our providers, that means you can’t be denied of care anytime. <br>
+    <br>-We disclose enrollee’s benefits to them.<br>
+    <br>-We respond to complaints quickly (Customer care lines are open 24/7).<br>
+    <br>-Free health check and health talk every quarter months. <br>
+    <br>-Aerobics work outs to our enrolled staffs. <br>
+    <br>-No matter your budget we have a suitable plan for your health needs.<br> 
+    <br>-Vast network of providers nationwide.  Branded health Access Card for corporate organization. <br></p>
+</div>
+
+<button class="accordion"><h2> Eligibility </h2></button>
+<div class="panel">
+  <p> The principal insured, spouse and four biological children are classified as members of one family, 
+    <br>but enrollees can also register cousins, nephews, nieces and house maids as dependants 
+    <br>if the enrollee does not have up to 4 biological children <br>
+    but must not exceed four (4) members and must not be more than 22 years of age, 
+    <br>all other dependants and individuals such as another wife, other children, 
+    <br>other domestic help and other family members that are under the principal insured <br>
+    will fall under our private policy or registered separately.
+  <br>
+  <br>  
+  Please note that all pre-existing medical conditions ought to be clearly stated on the enrolment form.
+  <br>
+  <br>-Prior to accessing care, an enrollee forum will be held to acquaint the staff 
+  <br>with the process of accessing care and introduce them to the providers who would be treating them.<br>
+  <br>-Within two to four weeks of the receipt of premium, enrollees can access care at the chosen hospitals.<br>
+  <br>-On getting to the hospital, present ID card and request for medical attention.<br>
+  <br>-In emergencies, however, clients can access care in any of our provider’s facility.<br</p>
+</div>
+
+<button class="accordion"><h2> Quality Assurance </h2></button>
+<div class="panel">
+  <p>Our Quality Assurance/Networking department is composed of trained medical professionals.
+    <br>These officials carry out the responsibility of ensuring that our enrollees enjoy the best of medical treatment.
+<br>
+
+<br>-With our commitment to the maintenance of standards and best operating practices,
+<br>all hospitals under our network must meet the basic required standard of NHIS.<br>
+<br>-Carry out the responsibility of ensuring that enrollee enjoys the best of medical treatment.<br>
+<br>-Constant re-inspection of these hospitals is done quarterly / bia – annually as the case maybe.<br>
+<br>-We ensure that the different providers stick to their different levels of care:
+<br>other Primary Care Providers (The Gatekeepers) will handle only simple and uncomplicated cases,<br>
+<br>other Secondary Care Providers will handle all secondary cases 
+<br>including complications arising from primary cases such procedures as surgical operations<br>
+The Tertiary Care Providers will be the ultimate care providers if the level of care is beyond the secondary level<br> <br></p>
+</div>
+
+<button class="accordion"><h2> Emergencies </h2></button>
+<div class="panel">
+  <p>In emergency medical situations, enrollees are to follow the process outlined below:
+    <br>
+<br>  
+<br>-Contact CKLINE HEALTHCARE LIMITED call center immediately<br>
+<br>-Arrangements will be made by CKLINE HEALTHCARE LIMITED to move enrollee to an appropriate center.<br>
+<br>-If however, patient had already been moved to a hospital that is not on the network 
+ <br>before CKLINE HEALTHCARE LIMITED is contacted; enrollee will be evacuated as soon as possible to an appropriate center.<br>
+<br>-If on the other hand, enrollee accessed care and paid at the point of service, 
+<br>reimbursement will be made as soon as claims are verified.</p>
+</div>
+
+<button class="accordion"><h2> Inclusion </h2></button>
+<div class="panel">
+  <p>This refers to addition of dependants to an already existing policy or the new registration of enrollees. <br>
+    <br>This must be concluded by the 15th of any month for it to be effective on the 1st of the following month.<br>
+    <br>Failure to meet this deadline means that the potential enrollees’ effective policy date will be postponed by another month.
+    <br>
+<br> </p>
+</div>
+
+<button class="accordion"><h2> After Sale Service </h2></button>
+<div class="panel">
+  <p>We have a vibrant after sales department that pro-actively anticipates and attends to client’s issues before they occur.
+    <br>
+    <br>·Provider survey: On bia-annual basis, questionnaires will be distributed to all enrollees 
+    <br>to assess the level and degree of satisfaction with services offered in the various centers.
+    <br>
+    <br>·24-hour call centers which can be called in emergencies or when enrollee has problems accessing care.
+    <br>
+    <br>·A dedicated customer care officer who will be the point of contact will liaise with your organization.
+    <br>He will visit frequently to ensure that the scheme is up and running with no hitches in your environment.
+<br> </p>
+</div>
+
+
+
+
+           
+
+
+        <!--get quote cta -->
+        <!-- get-quote.njk -->
+<div class="get-quote">
+    <div class="l-container">
+        <div class="col get-quote justify-center lg-12 md-12 sm-12 xs-12">
+            <h2 class="common-title-text">What are you waiting for?<br>
+                Hop In!
+                <br>Let us help you find just what you’re looking for, right away.
+                <br>Tap below to get started in minutes</h2>
+            <a href="buynow.html">
+                <button class="button button_primary get-quote__button" id="get-quote" test-id="getQuoteLinkBtn">Get Started</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <!--Get In Touch-->
+    <br>
+    <br>
+        <br>
+        <div class="l-container row content-container-wrap" id="getintouch">
+            <div class="col lg-7 md-7 sm-6 xs-12 justify-center">
+                <img class="content-container__illustration" src="img/getintouch.jpg">
+            </div>
+    
+            <div class="col lg-5 md-5 sm-6 xs-12">
+                <div class="testimonial-carousel">
+                    
+                    <p class="common-body-text">
+                        → GET IN TOUCH
+                        </p><br>
+    
+                        <h2> Need help with any of service? <br>
+                            Don't hesitate to get in touch.<br>
+                        </h2><br>
+    
+    
+                    <!--<h3> Need help with any of service? Don't hesitate to get in touch.<br>
+                    </h3><br>-->
+                <p class="common-body-text">
+                    <br>
+                     📨     Email</b><br>
+                                info@cklinehmo.com<br>
+                    <br>
+    
+                    <b>☎️  Phone</b><br>
+                            012951030, (234) 09014685058, 08023702721<br>
+                    <br>
+    
+                    <b>🏠  Address</b><br>
+                            Suite 203, 2nd floor ikeja plaza,<br>
+                            81 mobolaji bank anthony way ikeja plaza, Lagos.<br>
+                 </p>
+                 </div>
+                 </div>
+                 </div>
+    <br>
+    <br>
+    
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31707.45286546966!2d3.3213094022613987!3d6.593155999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b922137f981e9%3A0x520059a56f6c79b!2sCKLINE%20Healthcare%20Limited!5e0!3m2!1sen!2sng!4v1670521893058!5m2!1sen!2sng" 
+                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+
+
+<!--Tab Acc-->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+
+
+        <!--Scroll up Button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↟Top</button>
+
+
+
+        <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+
+
+
+       <!-- Footer -->
+    <!-- footer.njk -->
+<!--First big footer-->
+<div class="footer-container">
+    <footer class="l-container row">
+        <div class="col lg-4 md-4 xs-12">
+            <img class="footer-logo" src="img/flogos.png">
+        </div>
+
+        <div class="col lg-2 md-2 sm-12 xs-12">
+            <p class="footer-nav__list-item_header">company</p>
+            <ul class="footer_nav_list">
+                <li class="footer-nav__list-item">
+                    <a href="about-us.html">About Us</a>
+                </li>
+
+                <!--Blog Post-->
+                <!--<li class="footer-nav__list-item">
+                    <a href="https://Cklinehealthinc.co/blog/"> blog</a>
+                </li>-->
+                <li class="footer-nav__list-item">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </li>
+
+                <!--Board-->
+                <li class="footer-nav__list-item">
+                    <a href="board.html">board</a>
+                </li>
+                <!-- <li class="footer-nav__list-item">
+                        <a href="#">press</a>
+                    </li> -->
+
+                <!--<li class="footer-nav__list-item">
+                    <a href="team.html#career">careers</a>
+                </li>-->
+            </ul>
+        </div>
+
+        <div class="col lg-2 md-2 sm-12 xs-12">
+            <p class="footer-nav__list-item_header">health plans</p>
+            <ul class="footer_nav_list">
+                <li class="footer-nav__list-item">
+                    <a href="buynow.html">Ckline Basic</a>
+                </li>
+                <li class="footer-nav__list-item">
+                    <a href="buynow.html">Ckline Basic Plus</a>
+                </li>
+                
+                <li class="footer-nav__list-item">
+                    <a href="buynow.html">Ckline Economy</a>
+                </li>
+
+                <li class="footer-nav__list-item">
+                    <a href="buynow.html">Ckline Upper Class</a>
+                </li>
+
+                <li class="footer-nav__list-item">
+                    <a href="buynow.html">Ckline First Class</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col lg-2 md-2 sm-12 xs-12">
+            <p class="footer-nav__list-item_header">Quick Links</p>
+            <ul class="footer_nav_list">
+                <li class="footer-nav__list-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="footer-nav__list-item">
+                    <a href="chospital-list.html">Your available hospitals</a>
+                </li>
+                <li class="footer-nav__list-item">
+                    <a href="benefits.html">Your benefit list</a>
+                </li>
+
+                <li class="footer-nav__list-item">
+                    <a href="changeofhospital.html">
+                        Change of hospital</a>
+                <!--</li>
+                <li class="footer-nav__list-item">
+                    <a href="exclusion-list.html">Retail exclusion list</a>
+                </li>
+                <li class="footer-nav__list-item">
+                    <a href="https://provider.Cklinehmo.com/login">hospital portal</a>
+                </li>-->
+                
+                <li class="footer-nav__list-item">
+                    <a href="faq.html">FAQs</a>
+                </li>
+                <li class="footer-nav__list-item">
+                    <a href="index.html#newsletter">Subcribe to our newsletter</a>
+                </li>
+                <li class="footer-nav__list-item">
+                    <a href="https://whatsform.com/mWbU6F">Get free health insurance advice</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col lg-2 md-2 sm-12 xs-12">
+            <p class="footer-nav__list-item_header">contact</p>
+            <p class="footer-nav__text-item"><a href="https://g.page/CklineHMO">
+            Suite 203, 2nd Floor, Ikeja Plaza, 81 Mobolaji Anthony Way, Ikeja Lagos, Nigeria.</a></p>
+            <p class="footer-nav__text-item">
+                <a href="tel:09014685058">01-2951030 (09014685058, 08023702721,  08063216136)</a>
+            </p>
+            <p class="footer-nav__text-item">
+                <a href="mailto:hello@Cklinehmo.com?subject=Enquiry [from our site]">info@cklinehmo.com  cklinehealthcare@gmail.com </a>
+            </p>
+        </div>
+
+        <!--Social Media Section-->
+        <div class="l-container row">
+            <p class="copyright col lg-6 md-6 sm-6 xs-12">Follow Us On Our Social Handle.
+            </p>
+
+            <div class="cklinehmo-social-links col lg-6 md-6 sm-6 xs-12">
+                <a href="https://www.facebook.com/Cklinehealthcareltd" style="color: #f7fafc;" class="fa fa-facebook" target="_blank" rel="noopener noreferrer" aria-hidden="true"></a>
+                <a href="https://www.instagram.com/Cklinehealthcareltd/" style="color: #f7fafc;" class="fa fa-instagram" target="_blank" rel="noopener noreferrer" aria-hidden="true"></a>
+            </div>
+        
+         
+         </div>
+    </footer>
+</div>
+
+
+<!-- Mini footer-->
+<footer class="mini-footer-container">
+    <div class="l-container row">
+        <p class="copyright col lg-6 md-6 sm-6 xs-12">© 2022 CklineHMO. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    </div>
+
+<script src="js/script_1667294869789.js"></script>
+</body>
+
+<!--<script src="../cdnjs.cloudflare.com/ajax/libs/nedb/1.8.0/nedb.min.js"></script>-->
+<!-- inject:js -->
+
+<!-- endinject -->
+
+ 
+</html>
